@@ -106,17 +106,27 @@ WSGI_APPLICATION = 'drf_IDES.wsgi.application'
 
 import os
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.getenv('DB_NAME'),
+#         'USER': os.getenv('DB_USER'),
+#         'PASSWORD': os.getenv('DB_PASSWORD'),
+#         'HOST': os.getenv('DB_HOST'),
+#         'PORT': os.getenv('DB_PORT', '3306'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT', '3306'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ides_productdetails',
+        'USER': 'suvarna',
+        'PASSWORD': 'WtP73JWm7n1DOlCcVAsdngc7xL9DNf5C',
+        'HOST': 'dpg-cplbrp0cmk4c739lfam0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
-
 
 
 

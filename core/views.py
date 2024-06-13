@@ -11,7 +11,6 @@ from rest_framework_json_api.views import ModelViewSet
 from rest_framework import status
 from core.serializers import WordSerializer
 from core.serializers import ImageSerializer
-from core.serializers import ImageSerializer1
 
 from core.serializers import ProductDetailsSerializer
 from core.models import ProductDetails
